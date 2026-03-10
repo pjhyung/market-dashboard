@@ -75,3 +75,36 @@ def test_calc_sector_performance_top10():
 
     result = clf.calc_sector_performance(market_df, sector_map)
     assert len(result) <= 10
+
+
+def test_calc_sector_performance_empty_df():
+    """빈 market_df → 빈 dict 반환"""
+    clf = SectorClassifier()
+    result = clf.calc_sector_performance(pd.DataFrame(), {})
+    assert result == {}
+
+
+def test_calc_sector_performance_excludes_weighted_sum():
+    """반환값에 내부 계산 상태(weighted_sum)가 없어야 함"""
+    clf = SectorClassifier()
+    market_df = pd.DataFrame({
+        "등락률": [5.0],
+        "시가총액": [1000.0],
+    }, index=["005930"])
+    result = clf.calc_sector_performance(market_df, {"005930": "semiconductor"})
+    assert "weighted_sum" not in result["semiconductor"]
+
+
+def test_calc_sector_performance_sorted_descending():
+    """결과가 등락률 내림차순으로 정렬돼야 함"""
+    clf = SectorClassifier()
+    market_df = pd.DataFrame({
+        "등락률": [5.0, 2.0],
+        "시가총액": [1000.0, 1000.0],
+    }, index=["005930", "012450"])
+    result = clf.calc_sector_performance(
+        market_df,
+        {"005930": "semiconductor", "012450": "defense"}
+    )
+    sectors = list(result.values())
+    assert sectors[0]["change_pct"] >= sectors[1]["change_pct"]
