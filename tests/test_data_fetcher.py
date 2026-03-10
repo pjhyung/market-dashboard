@@ -30,6 +30,7 @@ def test_fetch_market_data_returns_dataframe():
     assert "등락률" in df.columns
 
 
+@pytest.mark.integration
 def test_fetch_etf_history_returns_enough_rows():
     fetcher = DataFetcher()
     # KODEX 반도체 (091160)
@@ -38,6 +39,7 @@ def test_fetch_etf_history_returns_enough_rows():
     assert len(df) >= 60  # 60일선 계산을 위해 최소 60개
 
 
+@pytest.mark.integration
 def test_fetch_stock_returns_daily():
     fetcher = DataFetcher()
     # 삼성전자 일간 수익률
@@ -46,12 +48,14 @@ def test_fetch_stock_returns_daily():
     assert isinstance(result["return_pct"], float)
 
 
+@pytest.mark.integration
 def test_fetch_stock_returns_weekly():
     fetcher = DataFetcher()
     result = fetcher.fetch_stock_returns("005930", period="weekly")
     assert "return_pct" in result
 
 
+@pytest.mark.integration
 def test_fetch_stock_returns_monthly():
     fetcher = DataFetcher()
     result = fetcher.fetch_stock_returns("005930", period="monthly")
