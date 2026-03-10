@@ -155,3 +155,47 @@ INDUSTRY_TO_SECTOR: dict[str, str] = {}
 for sector in SECTORS:
     for code in sector["krx_industry_codes"]:
         INDUSTRY_TO_SECTOR[code] = sector["id"]
+
+
+def _get_manual_mapping() -> dict:
+    """순환 임포트 방지를 위해 지연 로드"""
+    from src.sector_classifier import MANUAL_MAPPING
+    return MANUAL_MAPPING
+
+
+# 테스트 및 외부 모듈에서 sector_config를 통해 MANUAL_MAPPING 접근 가능하도록 re-export
+class _LazyMapping:
+    """MANUAL_MAPPING을 sector_config에서 접근할 수 있도록 하는 프록시"""
+    _cache = None  # type: ignore
+
+    def keys(self):
+        return self._load().keys()
+
+    def values(self):
+        return self._load().values()
+
+    def items(self):
+        return self._load().items()
+
+    def get(self, key, default=None):
+        return self._load().get(key, default)
+
+    def __getitem__(self, key):
+        return self._load()[key]
+
+    def __contains__(self, key):
+        return key in self._load()
+
+    def __iter__(self):
+        return iter(self._load())
+
+    def __len__(self):
+        return len(self._load())
+
+    def _load(self) -> dict:
+        if self._cache is None:
+            self._cache = _get_manual_mapping()
+        return self._cache
+
+
+MANUAL_MAPPING = _LazyMapping()
