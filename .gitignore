@@ -7,3 +7,7 @@ venv/
 *.egg-info/
 dist/
 build/
+.DS_Store
+*.env.*
+htmlcov/
+.coverage
