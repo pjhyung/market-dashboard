@@ -38,7 +38,7 @@ class Indicators:
 
         # avg_loss가 0이면 RSI = 100
         last_loss = avg_loss.iloc[-1]
-        if last_loss == 0:
+        if last_loss < 1e-10:
             return 100.0
 
         rs = avg_gain.iloc[-1] / last_loss
@@ -74,6 +74,9 @@ class Indicators:
         ma_long = close.rolling(long).mean()
 
         # 최근 lookback일 내 교차 감지
+        # i=1: 오늘(iloc[-1]) vs 어제(iloc[-2]) 비교
+        # i=2: 어제(iloc[-2]) vs 그제(iloc[-3]) 비교, ...
+        # prev_diff = i+1일 전, curr_diff = i일 전 (최신→과거 방향)
         for i in range(1, lookback + 1):
             if len(ma_short) < i + 1:
                 break
@@ -108,8 +111,8 @@ class Indicators:
         if len(df) < 2 or "Volume" not in df.columns:
             return 1.0
 
-        # 당일 제외한 이전 period일 평균
-        avg_vol = df["Volume"].iloc[-period:-1].mean()
+        # 당일(iloc[-1]) 제외한 직전 period일 평균
+        avg_vol = df["Volume"].iloc[-(period + 1):-1].mean()
         if avg_vol == 0 or pd.isna(avg_vol):
             return 1.0
 
@@ -135,4 +138,6 @@ class Indicators:
             return {"label": "과매도", "emoji": "❄", "cls": "badge-cold"}
         if cross == "above":
             return {"label": "상승배치", "emoji": "📈", "cls": "badge-up"}
+        if cross == "below":
+            return {"label": "하락배치", "emoji": "📉", "cls": "badge-down"}
         return {"label": "중립", "emoji": "➡", "cls": "badge-neutral"}

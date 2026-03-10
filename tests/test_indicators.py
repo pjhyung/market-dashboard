@@ -55,15 +55,17 @@ def test_dead_cross_detected():
 
 def test_volume_ratio_surge():
     """당일 거래량이 평균의 5배 → ratio > 3"""
-    volumes = [1000] * 19 + [5000]
-    df = make_df([100] * 20, volumes=volumes)
+    # 21행: 이전 20일 평균 1000, 당일 5000 → ratio = 5.0
+    volumes = [1000] * 20 + [5000]
+    df = make_df([100] * 21, volumes=volumes)
     ratio = Indicators.calc_volume_ratio(df)
     assert ratio > 3.0, f"거래량 급증 미감지: {ratio}"
 
 
 def test_volume_ratio_normal():
     """모든 거래량이 동일하면 ratio ≈ 1.0"""
-    df = make_df([100] * 20, volumes=[1000] * 20)
+    # 21행: 이전 20일 평균 1000, 당일 1000 → ratio = 1.0
+    df = make_df([100] * 21, volumes=[1000] * 21)
     ratio = Indicators.calc_volume_ratio(df)
     assert 0.9 <= ratio <= 1.1, f"정상 거래량에서 ratio가 {ratio}"
 
