@@ -1,4 +1,12 @@
 # src/sector_config.py
+"""
+sector_config.py — 15개 테마 섹터 설정
+
+SECTORS: 섹터 메타데이터 리스트 (id, name, color, etf, 업종코드, 키워드)
+SECTOR_MAP: {sector_id: sector_dict} — O(1) 조회용
+INDUSTRY_TO_SECTOR: {krx_업종코드: sector_id} — 종목→섹터 분류용
+keywords: 뉴스·공시 텍스트 기반 보조 분류용 (현재 미사용, 향후 확장)
+"""
 
 # 섹터별 설정
 SECTORS = [
@@ -17,7 +25,7 @@ SECTORS = [
         "color": "#818CF8",
         "etf_ticker": "411030",   # KODEX K-AI
         "etf_name": "KODEX K-AI",
-        "krx_industry_codes": ["J582", "J581"],
+        "krx_industry_codes": ["J581", "J582"],
         "keywords": ["소프트웨어", "AI", "인공지능", "플랫폼", "클라우드"],
     },
     {
@@ -35,7 +43,7 @@ SECTORS = [
         "color": "#F59E0B",
         "etf_ticker": "459580",   # KODEX K-방산&우주
         "etf_name": "KODEX K-방산&우주",
-        "krx_industry_codes": ["C303", "C302"],
+        "krx_industry_codes": ["C303"],
         "keywords": ["방산", "항공", "우주", "무기", "방어"],
     },
     {
@@ -71,7 +79,7 @@ SECTORS = [
         "color": "#FCD34D",
         "etf_ticker": "091180",   # KODEX 자동차
         "etf_name": "KODEX 자동차",
-        "krx_industry_codes": ["C301", "C302"],
+        "krx_industry_codes": ["C301"],
         "keywords": ["자동차", "전기차", "부품", "타이어"],
     },
     {
@@ -125,15 +133,15 @@ SECTORS = [
         "color": "#F472B6",
         "etf_ticker": "364980",   # KODEX 게임&애니메이션
         "etf_name": "KODEX 게임&애니메이션",
-        "krx_industry_codes": ["J582", "R901"],
+        "krx_industry_codes": ["R901", "J591"],
         "keywords": ["게임", "엔터", "콘텐츠", "미디어", "엔터테인먼트"],
     },
     {
         "id": "chemical",
         "name": "화학",
         "color": "#E879F9",
-        "etf_ticker": "140710",   # KODEX 화학 (임시)
-        "etf_name": "KODEX 화학",
+        "etf_ticker": None,   # 화학 전용 ETF 없음, 지표 계산 생략
+        "etf_name": "ETF 없음",
         "krx_industry_codes": ["C201", "C202", "C203"],
         "keywords": ["화학", "석유화학", "정유", "플라스틱"],
     },
