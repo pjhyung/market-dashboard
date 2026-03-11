@@ -1,0 +1,920 @@
+{
+  "date": "2026-03-11",
+  "sectors": [
+    {
+      "name": "금융·은행",
+      "color": "#93C5FD",
+      "tickers": [
+        "105560",
+        "055550",
+        "086790",
+        "316140",
+        "032830"
+      ],
+      "total_cap": 615650000000.0,
+      "change_pct": 4.37,
+      "id": "finance",
+      "etf_name": "KODEX 은행",
+      "rsi": 50.2,
+      "cross": "dead_cross",
+      "volume_ratio": 1.28,
+      "signal_badge": {
+        "label": "데드크로스",
+        "emoji": "🔴",
+        "cls": "badge-dead"
+      },
+      "ma5": 15522.0,
+      "ma20": 16668.0,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "032830",
+            "name": "삼성생명",
+            "return_pct": 7.09
+          },
+          {
+            "ticker": "316140",
+            "name": "우리금융지주",
+            "return_pct": 3.89
+          },
+          {
+            "ticker": "086790",
+            "name": "하나금융지주",
+            "return_pct": 3.18
+          },
+          {
+            "ticker": "105560",
+            "name": "KB금융",
+            "return_pct": 2.65
+          },
+          {
+            "ticker": "055550",
+            "name": "신한지주",
+            "return_pct": 2.13
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "032830",
+            "name": "삼성생명",
+            "return_pct": 14.68
+          },
+          {
+            "ticker": "105560",
+            "name": "KB금융",
+            "return_pct": 9.88
+          },
+          {
+            "ticker": "086790",
+            "name": "하나금융지주",
+            "return_pct": 7.49
+          },
+          {
+            "ticker": "316140",
+            "name": "우리금융지주",
+            "return_pct": 4.87
+          },
+          {
+            "ticker": "055550",
+            "name": "신한지주",
+            "return_pct": 2.59
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "032830",
+            "name": "삼성생명",
+            "return_pct": 14.68
+          },
+          {
+            "ticker": "105560",
+            "name": "KB금융",
+            "return_pct": 6.47
+          },
+          {
+            "ticker": "316140",
+            "name": "우리금융지주",
+            "return_pct": 4.06
+          },
+          {
+            "ticker": "055550",
+            "name": "신한지주",
+            "return_pct": 0.89
+          },
+          {
+            "ticker": "086790",
+            "name": "하나금융지주",
+            "return_pct": 0.8
+          }
+        ]
+      },
+      "ai_comment": "금융·은행 섹터 AI 분석을 불러올 수 없습니다."
+    },
+    {
+      "name": "유통·소비재",
+      "color": "#A3E635",
+      "tickers": [
+        "023530",
+        "139480",
+        "097950"
+      ],
+      "total_cap": 393300000000.0,
+      "change_pct": 3.46,
+      "id": "retail",
+      "etf_name": "KODEX 경기소비재",
+      "rsi": 46.2,
+      "cross": "dead_cross",
+      "volume_ratio": 0.06,
+      "signal_badge": {
+        "label": "데드크로스",
+        "emoji": "🔴",
+        "cls": "badge-dead"
+      },
+      "ma5": 10951.0,
+      "ma20": 11807.0,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "139480",
+            "name": "이마트",
+            "return_pct": 4.92
+          },
+          {
+            "ticker": "023530",
+            "name": "롯데쇼핑",
+            "return_pct": 4.58
+          },
+          {
+            "ticker": "097950",
+            "name": "CJ제일제당",
+            "return_pct": 2.21
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "139480",
+            "name": "이마트",
+            "return_pct": 8.23
+          },
+          {
+            "ticker": "023530",
+            "name": "롯데쇼핑",
+            "return_pct": 6.62
+          },
+          {
+            "ticker": "097950",
+            "name": "CJ제일제당",
+            "return_pct": 4.62
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "023530",
+            "name": "롯데쇼핑",
+            "return_pct": 2.4
+          },
+          {
+            "ticker": "139480",
+            "name": "이마트",
+            "return_pct": 1.48
+          },
+          {
+            "ticker": "097950",
+            "name": "CJ제일제당",
+            "return_pct": -9.29
+          }
+        ]
+      },
+      "ai_comment": "유통·소비재 섹터 AI 분석을 불러올 수 없습니다."
+    },
+    {
+      "name": "조선",
+      "color": "#A78BFA",
+      "tickers": [
+        "009540",
+        "010140",
+        "329180",
+        "267250"
+      ],
+      "total_cap": 1316800000000.0,
+      "change_pct": 2.58,
+      "id": "shipbuilding",
+      "etf_name": "KODEX 조선",
+      "rsi": 46.4,
+      "cross": "dead_cross",
+      "volume_ratio": 0.42,
+      "signal_badge": {
+        "label": "데드크로스",
+        "emoji": "🔴",
+        "cls": "badge-dead"
+      },
+      "ma5": 6803.0,
+      "ma20": 7151.0,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "009540",
+            "name": "HD한국조선해양",
+            "return_pct": 3.96
+          },
+          {
+            "ticker": "010140",
+            "name": "삼성중공업",
+            "return_pct": 3.41
+          },
+          {
+            "ticker": "267250",
+            "name": "HD현대",
+            "return_pct": 3.35
+          },
+          {
+            "ticker": "329180",
+            "name": "현대중공업",
+            "return_pct": 1.2
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "010140",
+            "name": "삼성중공업",
+            "return_pct": 22.55
+          },
+          {
+            "ticker": "329180",
+            "name": "현대중공업",
+            "return_pct": 15.46
+          },
+          {
+            "ticker": "009540",
+            "name": "HD한국조선해양",
+            "return_pct": 10.82
+          },
+          {
+            "ticker": "267250",
+            "name": "HD현대",
+            "return_pct": 6.31
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "267250",
+            "name": "HD현대",
+            "return_pct": 16.56
+          },
+          {
+            "ticker": "329180",
+            "name": "현대중공업",
+            "return_pct": 1.2
+          },
+          {
+            "ticker": "009540",
+            "name": "HD한국조선해양",
+            "return_pct": -1.06
+          },
+          {
+            "ticker": "010140",
+            "name": "삼성중공업",
+            "return_pct": -1.54
+          }
+        ]
+      },
+      "ai_comment": "조선 섹터 AI 분석을 불러올 수 없습니다."
+    },
+    {
+      "name": "철강·소재",
+      "color": "#FB923C",
+      "tickers": [
+        "005490",
+        "004020",
+        "010130"
+      ],
+      "total_cap": 2048400000000.0,
+      "change_pct": 2.16,
+      "id": "steel",
+      "etf_name": "KODEX 철강",
+      "rsi": 55.7,
+      "cross": "dead_cross",
+      "volume_ratio": 0.35,
+      "signal_badge": {
+        "label": "데드크로스",
+        "emoji": "🔴",
+        "cls": "badge-dead"
+      },
+      "ma5": 15634.0,
+      "ma20": 16004.75,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "010130",
+            "name": "고려아연",
+            "return_pct": 2.52
+          },
+          {
+            "ticker": "004020",
+            "name": "현대제철",
+            "return_pct": 1.91
+          },
+          {
+            "ticker": "005490",
+            "name": "POSCO홀딩스",
+            "return_pct": 0.44
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "004020",
+            "name": "현대제철",
+            "return_pct": 10.81
+          },
+          {
+            "ticker": "005490",
+            "name": "POSCO홀딩스",
+            "return_pct": 7.31
+          },
+          {
+            "ticker": "010130",
+            "name": "고려아연",
+            "return_pct": 2.08
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "004020",
+            "name": "현대제철",
+            "return_pct": 19.49
+          },
+          {
+            "ticker": "005490",
+            "name": "POSCO홀딩스",
+            "return_pct": -5.09
+          },
+          {
+            "ticker": "010130",
+            "name": "고려아연",
+            "return_pct": -8.91
+          }
+        ]
+      },
+      "ai_comment": "철강·소재 섹터 AI 분석을 불러올 수 없습니다."
+    },
+    {
+      "name": "건설·부동산",
+      "color": "#C084FC",
+      "tickers": [
+        "000720",
+        "028260",
+        "047040",
+        "006360"
+      ],
+      "total_cap": 463600000000.0,
+      "change_pct": 2.13,
+      "id": "construction",
+      "etf_name": "KODEX 건설",
+      "rsi": 53.2,
+      "cross": "dead_cross",
+      "volume_ratio": 0.24,
+      "signal_badge": {
+        "label": "데드크로스",
+        "emoji": "🔴",
+        "cls": "badge-dead"
+      },
+      "ma5": 108300.0,
+      "ma20": 109990.0,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "006360",
+            "name": "GS건설",
+            "return_pct": 7.5
+          },
+          {
+            "ticker": "047040",
+            "name": "대우건설",
+            "return_pct": 5.07
+          },
+          {
+            "ticker": "028260",
+            "name": "삼성물산",
+            "return_pct": 3.85
+          },
+          {
+            "ticker": "000720",
+            "name": "현대건설",
+            "return_pct": -2.11
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "047040",
+            "name": "대우건설",
+            "return_pct": 31.79
+          },
+          {
+            "ticker": "000720",
+            "name": "현대건설",
+            "return_pct": 17.26
+          },
+          {
+            "ticker": "006360",
+            "name": "GS건설",
+            "return_pct": 13.87
+          },
+          {
+            "ticker": "028260",
+            "name": "삼성물산",
+            "return_pct": 4.23
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "047040",
+            "name": "대우건설",
+            "return_pct": 78.0
+          },
+          {
+            "ticker": "000720",
+            "name": "현대건설",
+            "return_pct": 31.68
+          },
+          {
+            "ticker": "006360",
+            "name": "GS건설",
+            "return_pct": 8.16
+          },
+          {
+            "ticker": "028260",
+            "name": "삼성물산",
+            "return_pct": -10.43
+          }
+        ]
+      },
+      "ai_comment": "건설·부동산 섹터 AI 분석을 불러올 수 없습니다."
+    },
+    {
+      "name": "바이오·헬스케어",
+      "color": "#6EE7B7",
+      "tickers": [
+        "207940",
+        "068270",
+        "196170",
+        "145020",
+        "000100"
+      ],
+      "total_cap": 2572500000000.0,
+      "change_pct": 1.9,
+      "id": "bio",
+      "etf_name": "KODEX 바이오",
+      "rsi": 49.6,
+      "cross": "dead_cross",
+      "volume_ratio": 0.57,
+      "signal_badge": {
+        "label": "데드크로스",
+        "emoji": "🔴",
+        "cls": "badge-dead"
+      },
+      "ma5": 12897.0,
+      "ma20": 13167.0,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "207940",
+            "name": "삼성바이오로직스",
+            "return_pct": 4.08
+          },
+          {
+            "ticker": "068270",
+            "name": "셀트리온",
+            "return_pct": 1.46
+          },
+          {
+            "ticker": "000100",
+            "name": "유한양행",
+            "return_pct": 0.0
+          },
+          {
+            "ticker": "145020",
+            "name": "휴젤",
+            "return_pct": -2.75
+          },
+          {
+            "ticker": "196170",
+            "name": "알테오젠",
+            "return_pct": -4.13
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "207940",
+            "name": "삼성바이오로직스",
+            "return_pct": 9.3
+          },
+          {
+            "ticker": "196170",
+            "name": "알테오젠",
+            "return_pct": 8.43
+          },
+          {
+            "ticker": "000100",
+            "name": "유한양행",
+            "return_pct": 6.6
+          },
+          {
+            "ticker": "145020",
+            "name": "휴젤",
+            "return_pct": 5.98
+          },
+          {
+            "ticker": "068270",
+            "name": "셀트리온",
+            "return_pct": 5.88
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "068270",
+            "name": "셀트리온",
+            "return_pct": -2.56
+          },
+          {
+            "ticker": "145020",
+            "name": "휴젤",
+            "return_pct": -3.5
+          },
+          {
+            "ticker": "207940",
+            "name": "삼성바이오로직스",
+            "return_pct": -5.8
+          },
+          {
+            "ticker": "196170",
+            "name": "알테오젠",
+            "return_pct": -8.86
+          },
+          {
+            "ticker": "000100",
+            "name": "유한양행",
+            "return_pct": -9.47
+          }
+        ]
+      },
+      "ai_comment": "바이오·헬스케어 섹터 AI 분석을 불러올 수 없습니다."
+    },
+    {
+      "name": "화학",
+      "color": "#E879F9",
+      "tickers": [
+        "051910",
+        "011170",
+        "010955"
+      ],
+      "total_cap": 448300000000.0,
+      "change_pct": 1.85,
+      "id": "chemical",
+      "etf_name": "ETF 없음",
+      "rsi": 50.0,
+      "cross": "neutral",
+      "volume_ratio": 1.0,
+      "signal_badge": {
+        "label": "중립",
+        "emoji": "➡",
+        "cls": "badge-neutral"
+      },
+      "ma5": null,
+      "ma20": null,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "010955",
+            "name": "S-Oil",
+            "return_pct": 2.9
+          },
+          {
+            "ticker": "011170",
+            "name": "롯데케미칼",
+            "return_pct": 2.7
+          },
+          {
+            "ticker": "051910",
+            "name": "LG화학",
+            "return_pct": 1.45
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "011170",
+            "name": "롯데케미칼",
+            "return_pct": 5.99
+          },
+          {
+            "ticker": "051910",
+            "name": "LG화학",
+            "return_pct": 2.77
+          },
+          {
+            "ticker": "010955",
+            "name": "S-Oil",
+            "return_pct": -2.74
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "010955",
+            "name": "S-Oil",
+            "return_pct": 0.0
+          },
+          {
+            "ticker": "051910",
+            "name": "LG화학",
+            "return_pct": -0.79
+          },
+          {
+            "ticker": "011170",
+            "name": "롯데케미칼",
+            "return_pct": -10.89
+          }
+        ]
+      },
+      "ai_comment": "화학 섹터 AI 분석을 불러올 수 없습니다."
+    },
+    {
+      "name": "반도체",
+      "color": "#60A5FA",
+      "tickers": [
+        "005930",
+        "000660",
+        "042700",
+        "005290"
+      ],
+      "total_cap": 1507800000000.0,
+      "change_pct": 0.41,
+      "id": "semiconductor",
+      "etf_name": "KODEX 반도체",
+      "rsi": 56.6,
+      "cross": "above",
+      "volume_ratio": 0.79,
+      "signal_badge": {
+        "label": "상승배치",
+        "emoji": "📈",
+        "cls": "badge-up"
+      },
+      "ma5": 98758.0,
+      "ma20": 93974.0,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "000660",
+            "name": "SK하이닉스",
+            "return_pct": 1.81
+          },
+          {
+            "ticker": "005930",
+            "name": "삼성전자",
+            "return_pct": 1.12
+          },
+          {
+            "ticker": "042700",
+            "name": "한미반도체",
+            "return_pct": -3.55
+          },
+          {
+            "ticker": "005290",
+            "name": "동진쎄미켐",
+            "return_pct": -4.37
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "042700",
+            "name": "한미반도체",
+            "return_pct": 20.66
+          },
+          {
+            "ticker": "000660",
+            "name": "SK하이닉스",
+            "return_pct": 12.49
+          },
+          {
+            "ticker": "005290",
+            "name": "동진쎄미켐",
+            "return_pct": 11.41
+          },
+          {
+            "ticker": "005930",
+            "name": "삼성전자",
+            "return_pct": 10.34
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "042700",
+            "name": "한미반도체",
+            "return_pct": 54.32
+          },
+          {
+            "ticker": "005930",
+            "name": "삼성전자",
+            "return_pct": 12.36
+          },
+          {
+            "ticker": "000660",
+            "name": "SK하이닉스",
+            "return_pct": 6.11
+          },
+          {
+            "ticker": "005290",
+            "name": "동진쎄미켐",
+            "return_pct": -7.02
+          }
+        ]
+      },
+      "ai_comment": "반도체 섹터 AI 분석을 불러올 수 없습니다."
+    },
+    {
+      "name": "자동차",
+      "color": "#FCD34D",
+      "tickers": [
+        "005380",
+        "000270",
+        "012330",
+        "011210",
+        "161390"
+      ],
+      "total_cap": 1260000000000.0,
+      "change_pct": 0.33,
+      "id": "auto",
+      "etf_name": "KODEX 자동차",
+      "rsi": 48.4,
+      "cross": "dead_cross",
+      "volume_ratio": 0.53,
+      "signal_badge": {
+        "label": "데드크로스",
+        "emoji": "🔴",
+        "cls": "badge-dead"
+      },
+      "ma5": 31983.0,
+      "ma20": 33306.5,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "005380",
+            "name": "현대차",
+            "return_pct": 0.95
+          },
+          {
+            "ticker": "000270",
+            "name": "기아",
+            "return_pct": 0.62
+          },
+          {
+            "ticker": "012330",
+            "name": "현대모비스",
+            "return_pct": 0.0
+          },
+          {
+            "ticker": "161390",
+            "name": "한국타이어앤테크놀로지",
+            "return_pct": -0.17
+          },
+          {
+            "ticker": "011210",
+            "name": "현대위아",
+            "return_pct": -2.05
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "011210",
+            "name": "현대위아",
+            "return_pct": 9.69
+          },
+          {
+            "ticker": "012330",
+            "name": "현대모비스",
+            "return_pct": 6.02
+          },
+          {
+            "ticker": "005380",
+            "name": "현대차",
+            "return_pct": 5.79
+          },
+          {
+            "ticker": "000270",
+            "name": "기아",
+            "return_pct": 3.38
+          },
+          {
+            "ticker": "161390",
+            "name": "한국타이어앤테크놀로지",
+            "return_pct": 1.37
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "005380",
+            "name": "현대차",
+            "return_pct": 5.16
+          },
+          {
+            "ticker": "000270",
+            "name": "기아",
+            "return_pct": 3.32
+          },
+          {
+            "ticker": "011210",
+            "name": "현대위아",
+            "return_pct": 0.82
+          },
+          {
+            "ticker": "012330",
+            "name": "현대모비스",
+            "return_pct": -5.69
+          },
+          {
+            "ticker": "161390",
+            "name": "한국타이어앤테크놀로지",
+            "return_pct": -9.37
+          }
+        ]
+      },
+      "ai_comment": "자동차 섹터 AI 분석을 불러올 수 없습니다."
+    },
+    {
+      "name": "통신",
+      "color": "#67E8F9",
+      "tickers": [
+        "030200",
+        "017670",
+        "032640"
+      ],
+      "total_cap": 152840000000.0,
+      "change_pct": 0.07,
+      "id": "telecom",
+      "etf_name": "KODEX 통신",
+      "rsi": 57.7,
+      "cross": "above",
+      "volume_ratio": 0.57,
+      "signal_badge": {
+        "label": "상승배치",
+        "emoji": "📈",
+        "cls": "badge-up"
+      },
+      "ma5": 104141.0,
+      "ma20": 98753.75,
+      "top5": {
+        "daily": [
+          {
+            "ticker": "032640",
+            "name": "LG유플러스",
+            "return_pct": 1.9
+          },
+          {
+            "ticker": "017670",
+            "name": "SK텔레콤",
+            "return_pct": 0.91
+          },
+          {
+            "ticker": "030200",
+            "name": "KT",
+            "return_pct": -1.48
+          }
+        ],
+        "weekly": [
+          {
+            "ticker": "017670",
+            "name": "SK텔레콤",
+            "return_pct": 10.81
+          },
+          {
+            "ticker": "030200",
+            "name": "KT",
+            "return_pct": 9.11
+          },
+          {
+            "ticker": "032640",
+            "name": "LG유플러스",
+            "return_pct": 3.16
+          }
+        ],
+        "monthly": [
+          {
+            "ticker": "030200",
+            "name": "KT",
+            "return_pct": 4.72
+          },
+          {
+            "ticker": "017670",
+            "name": "SK텔레콤",
+            "return_pct": 0.0
+          },
+          {
+            "ticker": "032640",
+            "name": "LG유플러스",
+            "return_pct": -7.33
+          }
+        ]
+      },
+      "ai_comment": "통신 섹터 AI 분석을 불러올 수 없습니다."
+    }
+  ],
+  "market_summary": "시장 종합 분석을 불러올 수 없습니다."
+}
